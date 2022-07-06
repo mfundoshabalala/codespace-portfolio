@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main.content__layout {
+	display: flex;
+
+	nav.sidenav {
+		flex: 1;
+	}
+}

@@ -1,0 +1,27 @@
+footer.main__footer {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		font-size: 1.5rem;
+		margin: 1rem 0;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display: flex;
+		column-gap: 2rem;
+
+		i.fab {
+			font-size: 2rem;
+			color: rgb(57, 57, 57);
+		}
+	}
+}

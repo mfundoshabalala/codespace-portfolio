@@ -9,6 +9,7 @@ header.main__header {
 	background: -webkit-linear-gradient(to right, #928dab, #1f1c2c);
 	background: linear-gradient(to right, #16222a, #1f1c2c, #16222a);
 	box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+	font-family: "Arima", cursive;
 
 	img {
 		border-radius: 100%;
@@ -20,12 +21,13 @@ header.main__header {
 
 	h1 {
 		font-size: 2.5rem;
-		font-weight: bolder;
-		margin: 1rem 0.5rem 0.1rem;
+		line-height: 2.5rem;
+		font-weight: 700;
+		margin: 1rem 0.5rem 0;
 	}
 
 	p {
 		font-size: 1rem;
-		margin: 0.5rem 0;
+		margin: 0.5rem 0 0;
 	}
 }

@@ -1,0 +1,33 @@
+header.main__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0.5rem;
+	color: #fff;
+	background: #1f1c2c;
+	background: -webkit-linear-gradient(to right, #928dab, #1f1c2c);
+	background: linear-gradient(to right, #16222a, #1f1c2c, #16222a);
+	box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+	font-family: "Arima", cursive;
+
+	img {
+		border-radius: 100%;
+		width: 125px;
+		height: 125px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+		border: 2px solid rgb(218, 218, 218);
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+		font-weight: 700;
+		margin: 1rem 0.5rem 0;
+	}
+
+	p {
+		font-size: 1rem;
+		margin: 0.5rem 0 0;
+	}
+}

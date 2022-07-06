@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main.content__layout {
+	display: flex;
+
+	nav.sidenav {
+		flex: 1;
+		min-width: fit-content;
+	}
+
+	section.content {
+		flex: 7;
+		padding: 2rem;
+	}
+}

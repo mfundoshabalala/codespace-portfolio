@@ -1,101 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-	<link rel="stylesheet" href="./css/global.css" />
-	<link rel="stylesheet" href="./css/page-layout.css" />
-	<link rel="stylesheet" href="./css/header.css" />
-	<link rel="stylesheet" href="./css/main.css" />
-	<link rel="stylesheet" href="./css/footer.css" />
-	<title>Mfundo Shabalala</title>
-	<script src="https://cdn.tailwindcss.com"></script>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Fontawesome CDN -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			rel="stylesheet" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap"
+			rel="stylesheet" />
+		<!-- Custom Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Hello World, I'm Mfundo</title>
 	</head>
 
-<body>
-	<div class="page-wrapper text-slate-900">
-	<!-- Header Component -->
-	<header
-		class="header-component flex items-center justify-center p-8 gap-x-20 shadow-sm bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 text-white">
-		<picture class="drop-shadow">
-			<img class="rounded-full shadow-md" src="http://unsplash.it/g/160/160?random&gravity=center"
-				alt="profile picture" />
-		</picture>
-		<div class="flex flex-col gap-y-2">
-			<h1 class="text-5xl font-black drop-shadow">Mfundo Shabalala</h1>
-			<p class="max-w-[60ch] px-1 font-light text-justify">A brief summary about myself. Lorem ipsum dolor sit amet,
-				consectetur
-				adipisicing
-				elit.
-				Maiores
-				alias adipisci fugiat. Neque aliquam, magni eos culpa tenetur sed ea earum officia aut necessitatibus quo!
-			</p>
-			<nav class="font-light mt-2">
-				<ul class="flex gap-x-5">
-					<li class="">
-						<a class="group duration-500 transition-all ease-in-out flex flex-col items-center" target="_blank"
-							href="https://github.com/mfundoshabalala">
-							<i class="fa_with_bg group-hover:text-slate-900 fab fa-github fa-2x"></i>
-							<span
-								class="invisible group-hover:visible duration-500 transition-all ease-in-out">GitHub</span></a>
+	<body>
+		<!-- Header Component -->
+		<header class="main__header">
+			<img src="http://unsplash.it/150?gravity=center" />
+			<h1>Mfundo Shabalala</h1>
+			<p>An introductory personal statement</p>
+		</header>
+
+		<main class="content__layout">
+			<!-- Side Navigation Component -->
+			<nav class="sidenav">
+				<span class="">Menu</span>
+				<ul class="">
+					<li class=""><a href="#education" class="">Education</a>
 					</li>
-					<li class="">
-						<a class="group duration-500 transition-all ease-in-out flex flex-col items-center" target="_blank"
-							href="https://linkedin.com/in/mfundoshabalala">
-							<i class="fa_with_bg group-hover:text-blue-800 fab fa-linkedin-in fa-2x"></i>
-							<span
-								class="invisible group-hover:visible duration-500 transition-all ease-in-out">LinkedIn</span>
-						</a>
+					<li class=""><a href="#experience" class="">Experience</a>
 					</li>
-					<li class="">
-						<a class="group duration-500 transition-all ease-in-out flex flex-col items-center" target="_blank"
-							href="https://twitter.com/datarist">
-							<i class="fa_with_bg group-hover:text-blue-600 fab fa-twitter fa-2x"></i>
-							<span
-								class="invisible group-hover:visible duration-500 transition-all ease-in-out">Twitter</span>
-						</a>
-					</li>
-					<li class="">
-						<a class="group duration-500 transition-all ease-in-out flex flex-col items-center" target="_blank"
-							href="https://twitter.com/datarist">
-							<i class="fa_with_bg group-hover:text-green-600 fab fa-spotify fa-2x"></i>
-							<span
-								class="invisible group-hover:visible duration-500 transition-all ease-in-out">Spotify</span>
-						</a>
-					</li>
+					<li class=""><a href="#skills" class="">Skills</a></li>
 				</ul>
 			</nav>
-		</div>
-	</header>
-	
-	<!-- Main Section -->
-	<section class="main-component">
-		<!-- Navigation Component -->
-		<nav class="main-navigation">
-			<h2 class="">Menu</h2>
-			<ul class="main-navigation__list">
-				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="#">Home</a>
+
+			<!-- Main Content Component -->
+			<section class="content">
+				<!-- Education History Component -->
+				<section class="content-education">
+					<h2 id="education" class="">Education</h2>
+					<ul class="">
+						<li class="">
+							<h3 class="">
+								Intro to Web at
+								<a title="Code Space Academy - Introduction to Web Certification"
+									href="https://www.codespace.co.za/courses/intro-to-web"
+									target="_blank" class="">CodeSpace
+									Academy</a>
+							</h3>
+							<p class="">
+								This short course gives an introductory look at
+								the basics of web
+								development. It is ideal for anyone interested
+								in seeing if web
+								development is for them and wants to understand
+								their options in the
+								field without breaking the bank. Intro to Web is
+								the starting point
+								to many of our longer specialised courses. The
+								course is centred
+								around a practical project of building a digital
+								resumé using HTML
+								and CSS.
+							</p>
+							<ul class="content-education__skills">
+								<li class="">
+									<i class="fab fa-html5"></i>
+									<span class="">HTML</span>
+								</li>
+								<li class="">
+									<i class="fab fa-css3"></i>
+									<span class="">CSS</span>
+								</li>
+								<li class="">
+									<i class="fab fa-js-square"></i>
+									<span class="">JavaScript</span>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<h3 class="">Qualification 2</h3>
+							<p class="">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Quia
+								doloremque veniam minima officia magni nesciunt
+								ad ratione pariatur
+								sequi, placeat vero officiis. Beatae, iusto
+								fuga? Quas fugiat nemo
+								qui? Iusto!
+							</p>
+							<ul class="content-education__skills">
+								<li class="">Skill 1</li>
+								<li class="">Skill 2</li>
+								<li class="">Skill 3</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Work Experience Component -->
+				<section class="content-experience">
+					<h2 id="experience" class="">Experience</h2>
+					<ul class="">
+						<li class="">
+							<h3 class="">Job 1</h3>
+							<p class="">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Quia
+								doloremque veniam minima officia magni nesciunt
+								ad ratione pariatur
+								sequi, placeat vero officiis. Beatae, iusto
+								fuga? Quas fugiat nemo
+								qui? Iusto!
+							</p>
+							<ul class="">
+								<li class="">A sentence about the
+									responsibilities of the job</li>
+								<li class="">A sentence about the
+									responsibilities of the job</li>
+								<li class="">A sentence about the
+									responsibilities of the job</li>
+								<li class="">A sentence about the
+									responsibilities of the job</li>
+							</ul>
+						</li>
+						<li class="">
+							<h3 class="">Job 2</h3>
+							<p class="">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Quia
+								doloremque veniam minima officia magni nesciunt
+								ad ratione pariatur
+								sequi, placeat vero officiis. Beatae, iusto
+								fuga? Quas fugiat nemo
+								qui? Iusto!
+							</p>
+							<ul class="">
+								<li class="">A sentence about the
+									responsibilities of the job</li>
+								<li class="">A sentence about the
+									responsibilities of the job</li>
+								<li class="">A sentence about the
+									responsibilities of the job</li>
+								<li class="">A sentence about the
+									responsibilities of the job</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Skills List -->
+				<section class="content-skills">
+					<h2 id="skills" class="">Skills</h2>
+					<ul class="">
+						<li class="">HTML</li>
+						<li class="">CSS</li>
+						<li class="">JavaScript</li>
+						<li class="">Skill-4</li>
+						<li class="">Skill-5</li>
+					</ul>
+				</section>
+			</section>
+		</main>
+
+		<footer class="main__footer">
+			<h2 class="">Contact Details</h2>
+			<ul>
+				<li class="">
+					<a href="https://www.linkedin.com/in/mfundoshabalala"
+						target="_blank" class="">
+						<i class="fab fa-linkedin"></i>
+					</a>
 				</li>
-				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="#">About</a>
+				<li class="">
+					<a href="https://twitter.com/mfundoshabalal" target="_blank"
+						class="">
+						<i class="fab fa-twitter"></i>
+					</a>
 				</li>
-				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="#">Projects</a>
-				</li>
-				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="#">Contact</a>
+				<li class="">
+					<a href="mailto:mfundoshabalala@gmail.com" target="_blank"
+						class="">
+						<i class="fab fa-google"></i>
+					</a>
 				</li>
 			</ul>
-		</nav>
-		<!-- Content Component -->
-		<main class="">Main Content Component</main>
-		</section>
-
-	<!-- Footer Component -->
-	<footer class="footer-component">Footer Component</footer>
-	</div>
+		</footer>
 	</body>
+
 </html>

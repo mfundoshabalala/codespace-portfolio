@@ -8,5 +8,11 @@ main.content__layout {
 
 	nav.sidenav {
 		flex: 1;
+		min-width: fit-content;
+	}
+
+	section.content {
+		flex: 6;
+		padding: 2rem;
 	}
 }

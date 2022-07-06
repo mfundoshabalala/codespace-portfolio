@@ -6,6 +6,11 @@ footer.main__footer {
 	align-items: center;
 	row-gap: 1rem;
 	border-top: 1px solid rgba(#c8c7c7, 0.8);
+	color: #fff;
+	background: #1f1c2c;
+	background: -webkit-linear-gradient(to right, #928dab, #1f1c2c);
+	background: linear-gradient(to right, #16222a, #1f1c2c, #16222a);
+	font-family: "Arima", cursive;
 
 	h2 {
 		font-size: 1.5rem;

@@ -27,6 +27,13 @@ ul {
   list-style-type: none;
 }
 
+.sticky {
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -121,6 +128,7 @@ nav.sidenav ul {
 }
 .content-experience .content-experience__responsibilities {
   list-style-type: disc;
+  margin-left: 2rem;
 }
 footer.main__footer {
   padding: 1rem;

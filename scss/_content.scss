@@ -41,6 +41,9 @@
 
 	&-experience {
 		// background-color: red;
+		.content-experience__responsibilities {
+			list-style-type: disc;
+		}
 	}
 
 	&-skills {

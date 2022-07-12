@@ -1,4 +1,6 @@
 .content {
+	max-width: 75ch;
+
 	&-education {
 		&__skills {
 			display: flex;
@@ -40,3 +42,4 @@
 		// background-color: red;
 	}
 }
+

@@ -89,7 +89,7 @@ header.main__header > div h1 {
   margin: 1rem 0.5rem 0;
 }
 header.main__header > div p {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-style: italic;
   margin: 0.25rem 0 1rem;
 }
@@ -212,6 +212,10 @@ nav.main-nav ul li a:hover {
 .content-experience .content-experience__responsibilities {
   list-style-type: disc;
   margin-left: 2rem;
+}
+.content-skills ul {
+  list-style-type: disc;
+  padding-left: 2rem;
 }
 
 aside {

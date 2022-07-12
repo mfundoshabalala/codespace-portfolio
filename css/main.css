@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -52,34 +53,72 @@ main.content__layout section.content {
 }
 
 header.main__header {
+  padding: 1rem;
+}
+header.main__header > div {
+  align-items: center;
+  background: #0f172a;
+  outline: 2px solid rgba(7, 7, 7, 0.7);
+  border-radius: 0.5rem;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 1rem 0.5rem;
-  color: #fff;
-  background: #1f1c2c;
-  background: -webkit-linear-gradient(to right, #928dab, #1f1c2c);
-  background: linear-gradient(to right, #16222a, #1f1c2c, #16222a);
-  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-  font-family: "Arima", cursive;
+  padding: 2rem 1rem 1rem;
+  box-shadow: 0 0 2px white inset;
 }
-header.main__header img {
+header.main__header > div img {
+  border: 1px solid #7a1a1a;
   border-radius: 100%;
-  width: 125px;
-  height: 125px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
-  border: 2px solid rgb(218, 218, 218);
+  box-shadow: 0 0 2px #7a1a1a inset;
+  height: 110px;
+  outline: 2px solid white;
+  width: 110px;
 }
-header.main__header h1 {
+header.main__header > div h1 {
   font-size: 2.5rem;
-  line-height: 2.5rem;
   font-weight: 700;
+  line-height: 2.5rem;
   margin: 1rem 0.5rem 0;
+  letter-spacing: -1px;
 }
-header.main__header p {
+header.main__header > div p {
   font-size: 1rem;
-  margin: 0.5rem 0 0;
+  margin: 0.25rem 0 1rem;
+  font-style: italic;
+}
+header.main__header > div ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  margin: 1rem 0 0;
+  list-style: none;
+  text-align: center;
+}
+header.main__header > div ul li a {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+  opacity: 0.75;
+  transition: opacity 250ms ease-in-out;
+}
+header.main__header > div ul li a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+header.main__header > div ul li a:hover span {
+  transform: scale(1.1) perspective(1px) translateZ(0);
+  opacity: 1;
+}
+header.main__header > div ul li a i[class^=fa] {
+  font-size: 1.75rem;
+}
+header.main__header > div ul li a span {
+  transition: opacity 350ms ease-in-out;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  opacity: 0;
 }
 
 nav.sidenav {

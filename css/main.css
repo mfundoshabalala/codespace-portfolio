@@ -58,14 +58,14 @@ header.main__header {
 header.main__header > div {
   align-items: center;
   background: #0f172a;
-  outline: 2px solid rgba(7, 7, 7, 0.7);
   border-radius: 0.5rem;
+  box-shadow: 0 0 2px white inset;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  outline: 2px solid rgba(7, 7, 7, 0.7);
   padding: 2rem 1rem 1rem;
-  box-shadow: 0 0 2px white inset;
 }
 header.main__header > div img {
   border: 1px solid #7a1a1a;
@@ -78,28 +78,28 @@ header.main__header > div img {
 header.main__header > div h1 {
   font-size: 2.5rem;
   font-weight: 700;
+  letter-spacing: -1px;
   line-height: 2.5rem;
   margin: 1rem 0.5rem 0;
-  letter-spacing: -1px;
 }
 header.main__header > div p {
   font-size: 1rem;
-  margin: 0.25rem 0 1rem;
   font-style: italic;
+  margin: 0.25rem 0 1rem;
 }
 header.main__header > div ul {
+  column-gap: 2rem;
   display: flex;
   justify-content: center;
-  column-gap: 2rem;
-  margin: 1rem 0 0;
   list-style: none;
+  margin: 1rem 0 0;
   text-align: center;
 }
 header.main__header > div ul li a {
   display: flex;
   flex-direction: column;
-  row-gap: 0.25rem;
   opacity: 0.75;
+  row-gap: 0.25rem;
   transition: opacity 250ms ease-in-out;
 }
 header.main__header > div ul li a:hover {
@@ -107,18 +107,17 @@ header.main__header > div ul li a:hover {
   text-decoration: none;
 }
 header.main__header > div ul li a:hover span {
-  transform: scale(1.1) perspective(1px) translateZ(0);
   opacity: 1;
+  transform: scale(1.1) perspective(1px) translateZ(0);
 }
 header.main__header > div ul li a i[class^=fa] {
   font-size: 1.75rem;
 }
 header.main__header > div ul li a span {
-  transition: opacity 350ms ease-in-out;
   font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  font-weight: 200;
   opacity: 0;
+  transition: opacity 350ms ease-in-out;
 }
 
 nav.sidenav {

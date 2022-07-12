@@ -6,7 +6,7 @@ body {
 main.content__layout {
 	display: flex;
 
-	nav.sidenav {
+	nav.main-nav {
 		flex: 1;
 		min-width: fit-content;
 	}
@@ -16,3 +16,4 @@ main.content__layout {
 		padding: 2rem;
 	}
 }
+

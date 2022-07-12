@@ -3,15 +3,13 @@ header.main__header {
 
 	> div {
 		align-items: center;
-		background: #0f172a;
+		background-color: $main_color;
 		border-radius: 0.5rem;
 		box-shadow: 0 0 2px white inset;
 		color: #fff;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		// background: -webkit-linear-gradient(to right, #928dab, #1f1c2c);
-		// background: linear-gradient(to right, #16222a, #1f1c2c, #16222a);
 		outline: 2px solid rgba(7, 7, 7, 0.7);
 		padding: 2rem 1rem 1rem;
 
@@ -39,7 +37,7 @@ header.main__header {
 		}
 
 		ul {
-			column-gap: 2rem;
+			column-gap: 1.75rem;
 			display: flex;
 			justify-content: center;
 			list-style: none;
@@ -66,11 +64,11 @@ header.main__header {
 		}
 
 		ul li a i[class^="fa"] {
-			font-size: 1.75rem;
+			font-size: 1.7rem;
 		}
 
 		ul li a span {
-			font-size: 0.8rem;
+			font-size: 0.75rem;
 			font-weight: 200;
 			opacity: 0;
 			transition: opacity 350ms ease-in-out;

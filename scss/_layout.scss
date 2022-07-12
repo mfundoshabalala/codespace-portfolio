@@ -6,12 +6,12 @@ body {
 main.content__layout {
 	display: flex;
 
-	nav.main-nav {
+	> aside {
 		flex: 1;
 		min-width: fit-content;
 	}
 
-	section.content {
+	> section {
 		flex: 7;
 		padding: 2rem;
 	}

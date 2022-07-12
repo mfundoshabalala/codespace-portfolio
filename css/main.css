@@ -49,11 +49,11 @@ body {
 main.content__layout {
   display: flex;
 }
-main.content__layout nav.main-nav {
+main.content__layout > aside {
   flex: 1;
   min-width: fit-content;
 }
-main.content__layout section.content {
+main.content__layout > section {
   flex: 7;
   padding: 2rem;
 }
@@ -164,8 +164,16 @@ nav.main-nav ul li a:hover {
   opacity: 1;
 }
 
-.content {
-  max-width: 75ch;
+.content > section:not(.content-skills) > ul {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.content article {
+  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #eaeaea;
 }
 .content-education__skills {
   display: flex;
@@ -173,27 +181,53 @@ nav.main-nav ul li a:hover {
 }
 .content-education__skills li {
   display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-  place-items: center;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  transition: all 250ms ease-in-out;
+  color: #eaeaea;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+.content-education__skills li:hover {
+  background-color: #0f172a;
+  color: #fff;
+}
+.content-education__skills li:hover span {
+  color: #fff;
 }
 .content-education__skills li i.fab {
-  font-size: 1.75rem;
-  border: 1px solid rgb(110, 110, 110);
-  border-radius: 100%;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 0 3px rgb(110, 110, 110);
+  padding: 0.25rem;
+  color: inherit;
+  background-color: #0f172a;
+  margin: -1px 0;
 }
 .content-education__skills li span {
-  font-size: 0.75rem;
+  padding: 0 0.75rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+  color: #000;
 }
 .content-experience .content-experience__responsibilities {
   list-style-type: disc;
   margin-left: 2rem;
 }
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+aside .blog-post {
+  max-width: 35ch;
+  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #eaeaea;
+}
+
 footer.main__footer {
   padding: 1rem;
   display: flex;

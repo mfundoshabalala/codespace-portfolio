@@ -5,14 +5,15 @@ body {
 
 main.content__layout {
 	display: flex;
+	gap: 2rem;
 
-	nav.sidenav {
+	> aside {
 		flex: 1;
 		min-width: fit-content;
 	}
 
-	section.content {
+	> section {
 		flex: 7;
-		padding: 2rem;
 	}
 }
+

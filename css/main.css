@@ -48,6 +48,7 @@ body {
 
 main.content__layout {
   display: flex;
+  gap: 2rem;
 }
 main.content__layout > aside {
   flex: 1;
@@ -55,7 +56,6 @@ main.content__layout > aside {
 }
 main.content__layout > section {
   flex: 7;
-  padding: 2rem;
 }
 
 header.main__header {

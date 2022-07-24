@@ -16,7 +16,7 @@ body {
 }
 
 body {
-	@apply bg-slate-100  m-0 p-0 flex flex-col text-slate-900;
+	@apply bg-slate-100  m-0 p-0 flex flex-col text-slate-800;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
 
 /* Start Header component styling */
 header {
-	@apply m-3 border rounded-xl p-6 shadow sm:m-6 sm:p-12;
+	@apply mx-3 mt-3 border rounded-xl p-6 shadow sm:m-6 sm:p-12;
 }
 
 header > div {
@@ -53,7 +53,7 @@ header > div ul > li > a {
 }
 
 header > div ul > li > a i.fab {
-	@apply flex text-slate-800;
+	@apply flex text-slate-700;
 }
 
 header > div ul > li > a:hover i.fab {
@@ -69,8 +69,34 @@ header > div ul > li > a:hover span {
 }
 /* End Header component styling */
 
+/* Start Navbar component styling */
+nav {
+	@apply m-3 border rounded-xl p-3 shadow-sm sm:m-6 sm:p-12;
+}
+
+nav h2 {
+	@apply mb-2;
+}
+
+nav ul {
+	@apply flex flex-col gap-1;
+}
+
+nav ul li {
+	@apply border font-thin rounded px-4 py-1 shadow-sm;
+}
+
+nav ul li:hover {
+	@apply bg-slate-800 text-slate-50 duration-300 font-light;
+}
+
+nav ul li a {
+	@apply no-underline hover:no-underline block;
+}
+/* End Navbar component styling */
+
 main {
-	@apply flex gap-8;
+	@apply flex gap-8 mx-3 mt-3;
 }
 
 main > aside {
@@ -81,9 +107,9 @@ main > section {
 	@apply flex-[7];
 }
 
-/* Start Menu component styling */
+/* Start Contact Me component styling */
 
-/* End Menu component styling */
+/* End Contact Me component styling */
 
 /* Anchor tags */
 a {

@@ -6,3 +6,7 @@
 @import "content";
 @import "footer";
 
+// components
+body {
+	@apply bg-slate-900;
+}

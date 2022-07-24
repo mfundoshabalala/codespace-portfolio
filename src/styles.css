@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply scroll-smooth;
+}
+
+body {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body {
+	@apply bg-slate-100  m-0 p-0 flex flex-col text-slate-900;
+}
+
+h2 {
+	@apply text-2xl font-bold;
+}
+
+/* Start Header component styling */
+header {
+	@apply m-3 border rounded-xl p-6 shadow sm:m-6 sm:p-12;
+}
+
+header > div {
+	@apply flex flex-col justify-center items-center gap-y-4;
+}
+
+header > div img {
+	@apply w-32 rounded-full h-32 border m-0;
+}
+
+header > div h1 {
+	@apply text-3xl font-black;
+}
+
+header > div p {
+	@apply text-sm italic font-serif text-center text-slate-700 -mt-4;
+}
+
+header > div ul {
+	@apply flex gap-x-8;
+}
+
+header > div ul > li > a {
+	@apply flex flex-col items-center hover:no-underline;
+}
+
+header > div ul > li > a i.fab {
+	@apply flex text-slate-800;
+}
+
+header > div ul > li > a:hover i.fab {
+	@apply animate-bounce delay-1000 duration-1000;
+}
+
+header > div ul li a span {
+	@apply text-sm font-light;
+}
+
+header > div ul > li > a:hover span {
+	@apply animate-pulse delay-1000 duration-1000;
+}
+/* End Header component styling */
+
+main {
+	@apply flex gap-8;
+}
+
+main > aside {
+	@apply flex-1 min-w-fit;
+}
+
+main > section {
+	@apply flex-[7];
+}
+
+/* Start Menu component styling */
+
+/* End Menu component styling */
+
+/* Anchor tags */
+a {
+	@apply no-underline hover:underline;
+}

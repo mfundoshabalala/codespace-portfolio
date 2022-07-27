@@ -16,16 +16,36 @@ body {
 }
 
 body {
-	@apply bg-slate-100  m-0 p-0 flex flex-col text-slate-800;
+	@apply bg-slate-100 m-0 p-0 flex flex-col gap-y-8;
+}
+
+header,
+nav,
+main > section > section,
+aside,
+footer {
+	@apply bg-slate-50 text-slate-800;
+}
+
+h1 {
+	@apply text-3xl font-black;
 }
 
 h2 {
-	@apply text-2xl font-bold;
+	@apply text-2xl font-bold mb-2 text-center;
+}
+
+h3 {
+	@apply text-lg font-bold mb-2;
+}
+
+a {
+	@apply no-underline hover:underline;
 }
 
 /* Start Header component styling */
 header {
-	@apply mx-3 mt-3 border rounded-xl p-6 shadow sm:m-6 sm:p-12;
+	@apply mx-3 mt-3 border rounded-xl p-6 shadow sm:mx-6 sm:p-12;
 }
 
 header > div {
@@ -34,10 +54,6 @@ header > div {
 
 header > div img {
 	@apply w-32 rounded-full h-32 border m-0;
-}
-
-header > div h1 {
-	@apply text-3xl font-black;
 }
 
 header > div p {
@@ -71,15 +87,11 @@ header > div ul > li > a:hover span {
 
 /* Start Navbar component styling */
 nav {
-	@apply m-3 border rounded-xl p-3 shadow-sm sm:m-6 sm:p-12;
-}
-
-nav h2 {
-	@apply mb-2;
+	@apply mx-3 border rounded-xl p-6 shadow sm:mx-6 sm:px-12;
 }
 
 nav ul {
-	@apply flex flex-col gap-1;
+	@apply flex flex-col gap-2 sm:gap-x-3 sm:flex-row justify-center;
 }
 
 nav ul li {
@@ -91,27 +103,74 @@ nav ul li:hover {
 }
 
 nav ul li a {
-	@apply no-underline hover:no-underline block;
+	@apply no-underline hover:no-underline block sm:min-w-[60px] text-center px-2;
 }
 /* End Navbar component styling */
 
+/* Start Main Section styling */
 main {
-	@apply flex gap-8 mx-3 mt-3;
+	@apply flex flex-col md:flex-row container mx-auto px-6 gap-8;
+}
+
+main > section.content {
+	@apply flex flex-col gap-y-4;
+}
+
+main > section.content > [class^="content-"] {
+	@apply border rounded-xl p-6 shadow-sm;
+}
+
+main > section.content > [class^="content-"] > p,
+main > aside > p {
+	@apply text-slate-700 font-light text-sm text-justify max-w-prose mx-auto mb-2;
+}
+
+main > section.content > [class^="content-"] > ul > li {
+	@apply border rounded-xl p-6 shadow-sm my-4 bg-white;
 }
 
 main > aside {
-	@apply flex-1 min-w-fit;
+	@apply border rounded-xl p-6 shadow-sm;
 }
 
-main > section {
-	@apply flex-[7];
+main > aside > article {
+	@apply border rounded-xl p-6 shadow-sm my-4 bg-white;
 }
+
+/* End Main Section styling */
 
 /* Start Contact Me component styling */
+section.content-contact {
+	@apply border rounded-xl p-3 shadow-sm sm:p-6;
+}
 
+section.content-contact > form {
+	@apply flex flex-col gap-y-4 items-center py-4;
+}
+
+section.content-contact > form > div {
+	@apply flex flex-col sm:flex-row sm:items-center gap-1 w-full max-w-md;
+}
+
+section.content-contact > form > div label {
+	@apply font-bold text-sm text-slate-700 flex-1;
+}
+
+section.content-contact > form > div input,
+section.content-contact > form > div textarea {
+	@apply p-2 border rounded w-full shadow border-slate-300 placeholder:font-thin flex-[5];
+}
+
+section.content-contact > form > div textarea {
+	@apply min-h-[100px];
+}
+
+section.content-contact > form button {
+	@apply p-2 border rounded w-full max-w-md text-white shadow bg-slate-800 font-medium;
+}
 /* End Contact Me component styling */
 
-/* Anchor tags */
-a {
-	@apply no-underline hover:underline;
+/* Start Footer component styling */
+footer {
+	@apply mx-3 mb-6 border rounded-xl p-6 shadow sm:mx-6 sm:px-12 text-[2px] text-center;
 }

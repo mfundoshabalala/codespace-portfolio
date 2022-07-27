@@ -753,7 +753,7 @@ body {
 
 header, 
 nav, 
-main > section > section, 
+main.main-content > section > section, 
 aside, 
 footer {
   --tw-bg-opacity: 1;
@@ -784,6 +784,7 @@ h3 {
 }
 
 a {
+  cursor: pointer;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
@@ -967,6 +968,8 @@ nav ul {
 nav ul li {
   border-radius: 0.25rem;
   border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.25rem;
@@ -1000,73 +1003,67 @@ nav ul li a:hover {
           text-decoration-line: none;
 }
 
-@media (min-width: 640px) {
-  nav ul li a {
-    min-width: 60px;
-  }
-}
-
 /* End Navbar component styling */
 
 /* Start Main Section styling */
 
-main {
+main.main-content {
   width: 100%;
 }
 
 @media (min-width: 640px) {
-  main {
+  main.main-content {
     max-width: 640px;
   }
 }
 
 @media (min-width: 768px) {
-  main {
+  main.main-content {
     max-width: 768px;
   }
 }
 
 @media (min-width: 1024px) {
-  main {
+  main.main-content {
     max-width: 1024px;
   }
 }
 
 @media (min-width: 1280px) {
-  main {
+  main.main-content {
     max-width: 1280px;
   }
 }
 
 @media (min-width: 1536px) {
-  main {
+  main.main-content {
     max-width: 1536px;
   }
 }
 
-main {
+main.main-content {
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  main {
+  main.main-content {
     flex-direction: row;
   }
 }
 
-main > section.content {
+main.main-content > section.content {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 }
 
-main > section.content > [class^="content-"] {
+main.main-content > section.content > [class^="content-"] {
   border-radius: 0.75rem;
   border-width: 1px;
   padding: 1.5rem;
@@ -1075,23 +1072,25 @@ main > section.content > [class^="content-"] {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-main > section.content > [class^="content-"] > p, 
-main > aside > p {
+main.main-content > section.content > [class^="content-"] > p, 
+main.main-content > aside > p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0.5rem;
-  max-width: 65ch;
+  max-width: 36rem;
   text-align: justify;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
-main > section.content > [class^="content-"] > ul > li {
+main.main-content > section.content > [class^="content-"] > section {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  display: grid;
+  gap: 1rem;
   border-radius: 0.75rem;
   border-width: 1px;
   --tw-bg-opacity: 1;
@@ -1102,7 +1101,64 @@ main > section.content > [class^="content-"] > ul > li {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-main > aside {
+@media (min-width: 1024px) {
+  main.main-content > section.content > [class^="content-"] > section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+main.main-content > section.content > .content-projects > section {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  main.main-content > section.content > .content-projects > section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+main.main-content > section.content > [class^="content-"] article {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+main.main-content > section.content > [class^="content-"] article.card {
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+main.main-content > section.content > [class^="content-"] article.card h3, 
+main.main-content > section.content > [class^="content-"] article.card footer {
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+main.main-content > section.content > [class^="content-"] article.card img {
+  transition-duration: 300ms;
+}
+
+main.main-content > section.content > [class^="content-"] article.card img:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+main.main-content > aside {
   border-radius: 0.75rem;
   border-width: 1px;
   padding: 1.5rem;
@@ -1111,7 +1167,13 @@ main > aside {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-main > aside > article {
+@media (min-width: 1024px) {
+  main.main-content > aside {
+    min-width: 400px;
+  }
+}
+
+main.main-content > aside > article {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.75rem;
@@ -1209,7 +1271,7 @@ section.content-contact > form button {
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
   padding: 0.5rem;
   font-weight: 500;
   --tw-text-opacity: 1;
@@ -1219,11 +1281,22 @@ section.content-contact > form button {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+section.content-contact > form button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 94 89 / var(--tw-bg-opacity));
+}
+
+section.content-contact > form button:active {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 /* End Contact Me component styling */
 
 /* Start Footer component styling */
 
-footer {
+footer.main-footer {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   margin-bottom: 1.5rem;
@@ -1238,7 +1311,7 @@ footer {
 }
 
 @media (min-width: 640px) {
-  footer {
+  footer.main-footer {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     padding-left: 3rem;

@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply scroll-smooth;
+}
+
+body {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body {
+	@apply bg-slate-100 m-0 p-0 flex flex-col gap-y-8;
+}
+
+header,
+nav,
+main.main-content > section > section,
+aside,
+footer {
+	@apply bg-slate-50 text-slate-800;
+}
+
+h1 {
+	@apply text-3xl font-black;
+}
+
+h2 {
+	@apply text-2xl font-bold mb-2 text-center;
+}
+
+h3 {
+	@apply text-lg font-bold mb-2;
+}
+
+a {
+	@apply no-underline hover:underline cursor-pointer;
+}
+
+/* Start Header component styling */
+header {
+	@apply mx-3 mt-3 border rounded-xl p-6 shadow sm:mx-6 sm:p-12;
+}
+
+header > div {
+	@apply flex flex-col justify-center items-center gap-y-4;
+}
+
+header > div img {
+	@apply w-32 rounded-full h-32 border m-0;
+}
+
+header > div p {
+	@apply text-sm italic font-serif text-center text-slate-700 -mt-4;
+}
+
+header > div ul {
+	@apply flex gap-x-8;
+}
+
+header > div ul > li > a {
+	@apply flex flex-col items-center hover:no-underline;
+}
+
+header > div ul > li > a i.fab {
+	@apply flex text-slate-700;
+}
+
+header > div ul > li > a:hover i.fab {
+	@apply animate-bounce delay-1000 duration-1000;
+}
+
+header > div ul li a span {
+	@apply text-sm font-light;
+}
+
+header > div ul > li > a:hover span {
+	@apply animate-pulse delay-1000 duration-1000;
+}
+/* End Header component styling */
+
+/* Start Navbar component styling */
+nav {
+	@apply mx-3 border rounded-xl p-6 shadow sm:mx-6 sm:px-12;
+}
+
+nav ul {
+	@apply flex flex-col gap-2 sm:gap-x-3 sm:flex-row justify-center;
+}
+
+nav ul li {
+	@apply border font-thin rounded px-4 py-1 shadow-sm bg-white;
+}
+
+nav ul li:hover {
+	@apply bg-slate-800 text-slate-50 duration-300 font-light;
+}
+
+nav ul li a {
+	@apply no-underline hover:no-underline block text-center px-2;
+}
+/* End Navbar component styling */
+
+/* Start Main Section styling */
+main.main-content {
+	@apply flex flex-col md:flex-row container mx-auto px-6 gap-6;
+}
+
+main.main-content > section.content {
+	@apply flex flex-col gap-y-4;
+}
+
+main.main-content > section.content > [class^="content-"] {
+	@apply border rounded-xl p-6 shadow-sm;
+}
+
+main.main-content > section.content > [class^="content-"] > p,
+main.main-content > aside > p {
+	@apply text-slate-700 font-light text-base leading-5 text-justify max-w-xl mx-auto mb-2;
+}
+
+main.main-content > section.content > [class^="content-"] > section {
+	@apply border rounded-xl p-6 shadow-sm my-4 bg-white grid lg:grid-cols-2 gap-4;
+}
+
+main.main-content > section.content > .content-projects > section {
+	@apply grid lg:grid-cols-2 gap-4 justify-center items-center;
+}
+
+main.main-content > section.content > [class^="content-"] article {
+	@apply my-0 border rounded-xl p-6 shadow-sm flex flex-col gap-y-2 bg-slate-50;
+}
+
+main.main-content > section.content > [class^="content-"] article.card {
+	@apply px-0 overflow-hidden;
+}
+
+main.main-content > section.content > [class^="content-"] article.card h3,
+main.main-content > section.content > [class^="content-"] article.card footer {
+	@apply text-center leading-5;
+}
+
+main.main-content > section.content > [class^="content-"] article.card img {
+	@apply hover:scale-105 duration-300;
+}
+
+main.main-content > aside {
+	@apply border rounded-xl p-6 shadow-sm lg:min-w-[400px];
+}
+
+main.main-content > aside > article {
+	@apply border rounded-xl p-6 shadow-sm my-4 bg-white;
+}
+
+/* End Main Section styling */
+
+/* Start Contact Me component styling */
+section.content-contact {
+	@apply border rounded-xl p-3 shadow-sm sm:p-6;
+}
+
+section.content-contact > form {
+	@apply flex flex-col gap-y-4 items-center py-4;
+}
+
+section.content-contact > form > div {
+	@apply flex flex-col sm:flex-row sm:items-center gap-1 w-full max-w-md;
+}
+
+section.content-contact > form > div label {
+	@apply font-bold text-sm text-slate-700 flex-1;
+}
+
+section.content-contact > form > div input,
+section.content-contact > form > div textarea {
+	@apply p-2 border rounded w-full shadow border-slate-300 placeholder:font-thin flex-[5];
+}
+
+section.content-contact > form > div textarea {
+	@apply min-h-[100px];
+}
+
+section.content-contact > form button {
+	@apply p-2 border rounded w-full max-w-md text-white shadow bg-teal-700 hover:bg-teal-800 font-medium active:scale-95;
+}
+/* End Contact Me component styling */
+
+/* Start Footer component styling */
+footer.main-footer {
+	@apply mx-3 mb-6 border rounded-xl p-6 shadow sm:mx-6 sm:px-12 text-[2px] text-center;
+}

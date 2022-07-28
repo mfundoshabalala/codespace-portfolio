@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  @screen h-screen;
+}/*# sourceMappingURL=style_20220723161550.css.map */

@@ -73,7 +73,7 @@ header > div ul > li > a i.fab {
 }
 
 header > div ul > li > a:hover i.fab {
-	@apply animate-bounce delay-1000 duration-1000;
+	@apply animate-bounce-spin delay-500;
 }
 
 header > div ul li a span {

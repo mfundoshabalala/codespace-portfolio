@@ -2,9 +2,14 @@
 module.exports = {
 	content: ["./index.html"],
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: {
+				"splash": "url('/public/images/background-image.png')",
+			},
+		},
 	},
 	plugins: [require("@tailwindcss/forms")],
 };
+
 
 

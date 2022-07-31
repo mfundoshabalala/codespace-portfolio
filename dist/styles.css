@@ -728,6 +728,10 @@ select {
   list-style-type: disc;
 }
 
+.bg-splash {
+  background-image: url('/public/images/background-image.png');
+}
+
 .pl-8 {
   padding-left: 2rem;
 }

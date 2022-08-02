@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				"splash": "url('/public/images/background-image.png')",
+				splash: "url('/public/images/background-image.png')",
 			},
 			animation: {
 				"bounce-spin": "bounce-spin 1500ms infinite ease-in-out",
@@ -24,8 +24,5 @@ module.exports = {
 			},
 		},
 		plugins: [require("@tailwindcss/forms")],
-	}
+	},
 };
-
-
-

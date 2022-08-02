@@ -1043,28 +1043,31 @@ section.content-contact > form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   row-gap: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-section.content-contact > form > div {
+section.content-contact > form > div.form-wrapper {
   display: flex;
-  width: 100%;
-  max-width: 28rem;
-  flex-direction: column;
-  gap: 0.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-@media (min-width: 640px) {
-  section.content-contact > form > div {
-    flex-direction: row;
-    align-items: center;
-  }
+section.content-contact > form div.form-control {
+  display: flex;
+  width: 100%;
+  min-width: 350px;
+  max-width: 28rem;
+  flex: 1 1 0%;
+  flex-direction: column;
+  row-gap: 0.25rem;
 }
 
 section.content-contact > form > div label {
-  flex: 1 1 0%;
+  padding-left: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 700;
@@ -1074,8 +1077,6 @@ section.content-contact > form > div label {
 
 section.content-contact > form > div input, 
 section.content-contact > form > div textarea {
-  width: 100%;
-  flex: 5;
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -1095,15 +1096,11 @@ section.content-contact > form > div textarea::placeholder {
   font-weight: 100;
 }
 
-section.content-contact > form > div textarea {
-  min-height: 100px;
-}
-
 section.content-contact > form button {
   width: 100%;
-  max-width: 28rem;
+  max-width: 20rem;
   border-radius: 0.25rem;
-  border-width: 1px;
+  border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
   padding: 0.5rem;
@@ -1124,6 +1121,7 @@ section.content-contact > form button:active {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-duration: 300ms;
 }
 
 /* End Contact Me component styling */
@@ -1152,3 +1150,42 @@ footer.main-footer {
     padding-right: 3rem;
   }
 }
+
+/* Modal styling start */
+
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.7;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border-radius: 0.25rem;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.is-active {
+  display: flex;
+}
+
+/* Modal styling end */

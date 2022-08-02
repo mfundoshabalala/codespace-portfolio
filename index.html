@@ -21,6 +21,11 @@
 	</head>
 
 	<body class="bg-splash">
+		<!-- Modal -->
+		<div id="modal" role="dialog" class="modal">
+			<h2>Still in development</h2>
+			<button class="">Close</button>
+		</div>
 		<!-- Header Component -->
 		<span id="profile"></span>
 		<header>
@@ -328,26 +333,37 @@
 						explicabo recusandae in praesentium nulla, nostrum
 						rerum. Reprehenderit laboriosam excepturi at voluptates
 						cum magni!</p>
-					<form action="">
-						<div class="form-control">
-							<label for="name">Name</label>
-							<input type="text" id="name" required
-								placeholder="Mfundo Shabalala">
+					<form>
+						<div class="form-wrapper">
+							<div class="form-control">
+								<label for="firstName">First Name</label>
+								<input type="text" id="firstName" required
+									placeholder="Mfundo">
+							</div>
+							<div class="form-control">
+								<label for="lastName">Last Name</label>
+								<input type="text" id="lastName" required
+									placeholder="Shabalala">
+							</div>
 						</div>
-						<div class="form-control">
-							<label for="email">Email</label>
-							<input type="email" id="email" required
-								placeholder="mfundo@gmail.com">
+						<div class="form-wrapper">
+							<div class="form-control">
+								<label for="email">Email</label>
+								<input type="email" id="email" required
+									placeholder="mfundoshabalala@gmail.com">
+							</div>
+							<div class="form-control">
+								<label for="website">Website</label>
+								<input type="text" id="website"
+									placeholder="https://www.google.com">
+							</div>
 						</div>
-						<div class="form-control">
-							<label for="website">Website</label>
-							<input type="text" id="website"
-								placeholder="https://www.google.com">
-						</div>
-						<div class="form-control">
-							<label for="message">Message</label>
-							<textarea id="message" required
-								placeholder="Hello, I am a web developer"></textarea>
+						<div class="form-wrapper">
+							<div class="form-control">
+								<label for="message">Message</label>
+								<textarea id="message" required
+									placeholder="Hello, I am a web developer"></textarea>
+							</div>
 						</div>
 						<button type="submit">
 							<i class="fas fa-paper-plane"></i>
@@ -533,5 +549,22 @@
 			</p>
 		</footer>
 	</body>
+
+	<script>
+		// open modal on load
+		window.addEventListener('load', () => {
+			document.getElementById('modal').classList.add('is-active');
+		});
+
+		// close modal on click
+		document.getElementById('modal').addEventListener('click', () => {
+			document.getElementById('modal').classList.remove('is-active');
+		});
+
+		// close modal after 5 seconds
+		setTimeout(() => {
+			document.getElementById('modal').classList.remove('is-active');
+		}, 5000);
+	</script>
 
 </html>

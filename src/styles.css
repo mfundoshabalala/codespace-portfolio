@@ -166,28 +166,28 @@ section.content-contact {
 }
 
 section.content-contact > form {
-	@apply flex flex-col gap-y-4 items-center py-4;
+	@apply flex flex-col gap-y-4 py-4 justify-center items-center;
 }
 
-section.content-contact > form > div {
-	@apply flex flex-col sm:flex-row sm:items-center gap-1 w-full max-w-md;
+section.content-contact > form > div.form-wrapper {
+	@apply flex flex-wrap justify-center gap-4;
+}
+
+section.content-contact > form div.form-control {
+	@apply flex flex-col gap-y-1 w-full min-w-[350px] max-w-md flex-1;
 }
 
 section.content-contact > form > div label {
-	@apply font-bold text-sm text-slate-700 flex-1;
+	@apply font-bold text-sm text-slate-700 pl-1;
 }
 
 section.content-contact > form > div input,
 section.content-contact > form > div textarea {
-	@apply p-2 border rounded w-full shadow border-slate-300 placeholder:font-thin flex-[5];
-}
-
-section.content-contact > form > div textarea {
-	@apply min-h-[100px];
+	@apply p-2 border rounded shadow border-slate-300 placeholder:font-thin;
 }
 
 section.content-contact > form button {
-	@apply p-2 border rounded w-full max-w-md text-white shadow bg-teal-700 hover:bg-teal-800 font-medium active:scale-95;
+	@apply p-2 border-none rounded w-full max-w-xs text-white shadow bg-teal-700 hover:bg-teal-800 font-medium active:scale-95 active:duration-300;
 }
 /* End Contact Me component styling */
 
@@ -195,3 +195,20 @@ section.content-contact > form button {
 footer.main-footer {
 	@apply mx-3 mb-6 border rounded-xl p-6 shadow sm:mx-6 sm:px-12 text-[2px] text-center;
 }
+
+/* Modal styling start */
+.modal {
+	@apply fixed top-0 left-0 w-full h-full bg-black opacity-70 z-50 text-white;
+	@apply hidden flex-col items-center justify-center;
+}
+
+button {
+	@apply border-none rounded bg-blue-600 text-white;
+	@apply px-4 py-2;
+}
+
+.is-active {
+	@apply flex;
+}
+
+/* Modal styling end */

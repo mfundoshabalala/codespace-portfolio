@@ -195,3 +195,20 @@ section.content-contact > form button {
 footer.main-footer {
 	@apply mx-3 mb-6 border rounded-xl p-6 shadow sm:mx-6 sm:px-12 text-[2px] text-center;
 }
+
+/* Modal styling start */
+.modal {
+	@apply fixed top-0 left-0 w-full h-full bg-black opacity-70 z-50 text-white;
+	@apply hidden flex-col items-center justify-center;
+}
+
+button {
+	@apply border-none rounded bg-blue-600 text-white;
+	@apply px-4 py-2;
+}
+
+.is-active {
+	@apply flex;
+}
+
+/* Modal styling end */

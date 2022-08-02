@@ -166,24 +166,24 @@ section.content-contact {
 }
 
 section.content-contact > form {
-	@apply flex flex-col gap-y-4 items-center py-4;
+	@apply flex flex-col gap-y-4 py-4 justify-center items-center;
 }
 
-section.content-contact > form > div {
-	@apply flex flex-col sm:flex-row sm:items-center gap-1 w-full max-w-2xl;
+section.content-contact > form > div.form-wrapper {
+	@apply flex flex-wrap justify-center gap-4;
+}
+
+section.content-contact > form div.form-control {
+	@apply flex flex-col gap-y-1 w-full min-w-[350px] max-w-md flex-1;
 }
 
 section.content-contact > form > div label {
-	@apply font-bold text-sm text-slate-700 flex-1;
+	@apply font-bold text-sm text-slate-700 pl-1;
 }
 
 section.content-contact > form > div input,
 section.content-contact > form > div textarea {
-	@apply p-2 border rounded w-full shadow border-slate-300 placeholder:font-thin flex-[6];
-}
-
-section.content-contact > form > div textarea {
-	@apply min-h-[150px];
+	@apply p-2 border rounded shadow border-slate-300 placeholder:font-thin;
 }
 
 section.content-contact > form button {

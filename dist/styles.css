@@ -1051,7 +1051,7 @@ section.content-contact > form {
 section.content-contact > form > div {
   display: flex;
   width: 100%;
-  max-width: 28rem;
+  max-width: 42rem;
   flex-direction: column;
   gap: 0.25rem;
 }
@@ -1075,7 +1075,7 @@ section.content-contact > form > div label {
 section.content-contact > form > div input, 
 section.content-contact > form > div textarea {
   width: 100%;
-  flex: 5;
+  flex: 6;
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -1096,14 +1096,14 @@ section.content-contact > form > div textarea::placeholder {
 }
 
 section.content-contact > form > div textarea {
-  min-height: 100px;
+  min-height: 150px;
 }
 
 section.content-contact > form button {
   width: 100%;
-  max-width: 28rem;
+  max-width: 20rem;
   border-radius: 0.25rem;
-  border-width: 1px;
+  border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
   padding: 0.5rem;
@@ -1124,6 +1124,7 @@ section.content-contact > form button:active {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-duration: 300ms;
 }
 
 /* End Contact Me component styling */

@@ -21,6 +21,11 @@
 	</head>
 
 	<body class="bg-splash">
+		<!-- Modal -->
+		<div id="modal" role="dialog" class="modal">
+			<h2>Still in development</h2>
+			<button class="">Close</button>
+		</div>
 		<!-- Header Component -->
 		<span id="profile"></span>
 		<header>
@@ -544,5 +549,22 @@
 			</p>
 		</footer>
 	</body>
+
+	<script>
+		// open modal on load
+		window.addEventListener('load', () => {
+			document.getElementById('modal').classList.add('is-active');
+		});
+
+		// close modal on click
+		document.getElementById('modal').addEventListener('click', () => {
+			document.getElementById('modal').classList.remove('is-active');
+		});
+
+		// close modal after 5 seconds
+		setTimeout(() => {
+			document.getElementById('modal').classList.remove('is-active');
+		}, 5000);
+	</script>
 
 </html>

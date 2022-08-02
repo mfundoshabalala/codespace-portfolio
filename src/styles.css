@@ -170,7 +170,7 @@ section.content-contact > form {
 }
 
 section.content-contact > form > div {
-	@apply flex flex-col sm:flex-row sm:items-center gap-1 w-full max-w-md;
+	@apply flex flex-col sm:flex-row sm:items-center gap-1 w-full max-w-2xl;
 }
 
 section.content-contact > form > div label {
@@ -179,15 +179,15 @@ section.content-contact > form > div label {
 
 section.content-contact > form > div input,
 section.content-contact > form > div textarea {
-	@apply p-2 border rounded w-full shadow border-slate-300 placeholder:font-thin flex-[5];
+	@apply p-2 border rounded w-full shadow border-slate-300 placeholder:font-thin flex-[6];
 }
 
 section.content-contact > form > div textarea {
-	@apply min-h-[100px];
+	@apply min-h-[150px];
 }
 
 section.content-contact > form button {
-	@apply p-2 border rounded w-full max-w-md text-white shadow bg-teal-700 hover:bg-teal-800 font-medium active:scale-95;
+	@apply p-2 border-none rounded w-full max-w-xs text-white shadow bg-teal-700 hover:bg-teal-800 font-medium active:scale-95 active:duration-300;
 }
 /* End Contact Me component styling */
 

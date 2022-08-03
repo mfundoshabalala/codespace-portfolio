@@ -4,7 +4,7 @@ This is my digital curriculum vitae to showcase my web development skills.
 
 ## [Demo](https://mfundoshabalala.netlify.app/)
 
-https://sparkling-sprinkles-dae536.netlify.app
+https://mfundoshabalala.netlify.app/
 
 ## Author(s)
 

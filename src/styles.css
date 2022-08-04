@@ -45,7 +45,7 @@ a {
 
 /* Start Header component styling */
 header {
-	@apply p-6 mx-3 mt-3 border shadow rounded-xl sm:mx-6 sm:p-12;
+	@apply p-6 mx-3 border shadow rounded-xl sm:mx-6 sm:p-12;
 }
 
 header > div {
@@ -57,15 +57,15 @@ header > div img {
 }
 
 header > div p {
-	@apply -mt-4 font-serif text-sm italic text-center text-slate-700;
+	@apply -mt-4 font-light text-center text-slate-700;
 }
 
 header > div ul {
-	@apply flex gap-x-8;
+	@apply flex mt-2 gap-x-10;
 }
 
 header > div ul > li > a {
-	perspective: 40px;
+	perspective: 45px;
 
 	@apply flex flex-col items-center hover:no-underline;
 }
@@ -75,11 +75,19 @@ header > div ul > li > a i.fab {
 }
 
 header > div ul > li > a:hover i.fab {
-	@apply delay-500 animate-bounce-spin;
+	@apply delay-75 animate-bounce-spin;
+}
+
+header > div ul > li > a:hover i.fab.fa-github {
+	@apply text-slate-900;
+}
+
+header > div ul > li > a:hover i.fab.fa-linkedin {
+	@apply text-blue-800;
 }
 
 header > div ul li a span {
-	@apply text-sm font-light;
+	@apply text-base font-light;
 }
 
 header > div ul > li > a:hover span {

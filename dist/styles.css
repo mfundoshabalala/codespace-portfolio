@@ -634,7 +634,6 @@ a:hover {
 header {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-  margin-top: 0.75rem;
   border-radius: 0.75rem;
   border-width: 1px;
   padding: 1.5rem;
@@ -670,22 +669,20 @@ header > div img {
 header > div p {
   margin-top: -1rem;
   text-align: center;
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-style: italic;
+  font-weight: 300;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 header > div ul {
+  margin-top: 0.5rem;
   display: flex;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 header > div ul > li > a {
-  perspective: 40px;
+  perspective: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -733,12 +730,22 @@ header > div ul > li > a i.fab {
 header > div ul > li > a:hover i.fab {
   -webkit-animation: bounce-spin 1500ms infinite ease-in-out;
           animation: bounce-spin 1500ms infinite ease-in-out;
-  transition-delay: 500ms;
+  transition-delay: 75ms;
+}
+
+header > div ul > li > a:hover i.fab.fa-github {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+header > div ul > li > a:hover i.fab.fa-linkedin {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
 header > div ul li a span {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 300;
 }
 

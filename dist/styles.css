@@ -685,6 +685,7 @@ header > div ul {
 }
 
 header > div ul > li > a {
+  perspective: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;

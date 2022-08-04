@@ -16,7 +16,7 @@ body {
 }
 
 body {
-	@apply bg-slate-100 m-0 p-0 flex flex-col gap-y-8;
+	@apply flex flex-col p-0 m-0 bg-slate-100 gap-y-8;
 }
 
 header,
@@ -32,32 +32,32 @@ h1 {
 }
 
 h2 {
-	@apply text-2xl font-bold mb-2 text-center;
+	@apply mb-2 text-2xl font-bold text-center;
 }
 
 h3 {
-	@apply text-lg font-bold mb-2;
+	@apply mb-2 text-lg font-bold;
 }
 
 a {
-	@apply no-underline hover:underline cursor-pointer;
+	@apply no-underline cursor-pointer hover:underline;
 }
 
 /* Start Header component styling */
 header {
-	@apply mx-3 mt-3 border rounded-xl p-6 shadow sm:mx-6 sm:p-12;
+	@apply p-6 mx-3 mt-3 border shadow rounded-xl sm:mx-6 sm:p-12;
 }
 
 header > div {
-	@apply flex flex-col justify-center items-center gap-y-4;
+	@apply flex flex-col items-center justify-center gap-y-4;
 }
 
 header > div img {
-	@apply w-32 rounded-full h-32 border m-0;
+	@apply w-32 h-32 m-0 border rounded-full;
 }
 
 header > div p {
-	@apply text-sm italic font-serif text-center text-slate-700 -mt-4;
+	@apply -mt-4 font-serif text-sm italic text-center text-slate-700;
 }
 
 header > div ul {
@@ -65,6 +65,8 @@ header > div ul {
 }
 
 header > div ul > li > a {
+	perspective: 40px;
+
 	@apply flex flex-col items-center hover:no-underline;
 }
 
@@ -73,7 +75,7 @@ header > div ul > li > a i.fab {
 }
 
 header > div ul > li > a:hover i.fab {
-	@apply animate-bounce-spin delay-500;
+	@apply delay-500 animate-bounce-spin;
 }
 
 header > div ul li a span {
@@ -81,35 +83,35 @@ header > div ul li a span {
 }
 
 header > div ul > li > a:hover span {
-	@apply animate-pulse delay-1000 duration-1000;
+	@apply duration-1000 delay-1000 animate-pulse;
 }
 /* End Header component styling */
 
 /* Start Navbar component styling */
 nav {
-	@apply mx-3 border rounded-xl p-6 shadow sm:mx-6 sm:px-12;
+	@apply p-6 mx-3 border shadow rounded-xl sm:mx-6 sm:px-12;
 }
 
 nav ul {
-	@apply flex flex-col gap-2 sm:gap-x-3 sm:flex-row justify-center;
+	@apply flex flex-col justify-center gap-2 sm:gap-x-3 sm:flex-row;
 }
 
 nav ul li {
-	@apply border font-thin rounded px-4 py-1 shadow-sm bg-white;
+	@apply px-4 py-1 font-thin bg-white border rounded shadow-sm;
 }
 
 nav ul li:hover {
-	@apply bg-slate-800 text-slate-50 duration-300 font-light;
+	@apply font-light duration-300 bg-slate-800 text-slate-50;
 }
 
 nav ul li a {
-	@apply no-underline hover:no-underline block text-center px-2;
+	@apply block px-2 text-center no-underline hover:no-underline;
 }
 /* End Navbar component styling */
 
 /* Start Main Section styling */
 main.main-content {
-	@apply flex flex-col md:flex-row container mx-auto px-6 gap-6;
+	@apply container flex flex-col gap-6 px-6 mx-auto md:flex-row;
 }
 
 main.main-content > section.content {
@@ -117,24 +119,24 @@ main.main-content > section.content {
 }
 
 main.main-content > section.content > [class^="content-"] {
-	@apply border rounded-xl p-6 shadow-sm;
+	@apply p-6 border shadow-sm rounded-xl;
 }
 
 main.main-content > section.content > [class^="content-"] > p,
 main.main-content > aside > p {
-	@apply text-slate-700 font-light text-base leading-5 text-justify max-w-xl mx-auto mb-2;
+	@apply max-w-xl mx-auto mb-2 text-base font-light leading-5 text-justify text-slate-700;
 }
 
 main.main-content > section.content > [class^="content-"] > section {
-	@apply border rounded-xl p-6 shadow-sm my-4 bg-white grid lg:grid-cols-2 gap-4;
+	@apply grid gap-4 p-6 my-4 bg-white border shadow-sm rounded-xl lg:grid-cols-2;
 }
 
 main.main-content > section.content > .content-projects > section {
-	@apply grid lg:grid-cols-2 gap-4 justify-center items-center;
+	@apply grid items-center justify-center gap-4 lg:grid-cols-2;
 }
 
 main.main-content > section.content > [class^="content-"] article {
-	@apply my-0 border rounded-xl p-6 shadow-sm flex flex-col gap-y-2 bg-slate-50;
+	@apply flex flex-col p-6 my-0 border shadow-sm rounded-xl gap-y-2 bg-slate-50;
 }
 
 main.main-content > section.content > [class^="content-"] article.card {
@@ -143,11 +145,11 @@ main.main-content > section.content > [class^="content-"] article.card {
 
 main.main-content > section.content > [class^="content-"] article.card h3,
 main.main-content > section.content > [class^="content-"] article.card footer {
-	@apply text-center leading-5;
+	@apply leading-5 text-center;
 }
 
 main.main-content > section.content > [class^="content-"] article.card img {
-	@apply hover:scale-105 duration-300;
+	@apply duration-300 hover:scale-105;
 }
 
 main.main-content > aside {
@@ -155,18 +157,18 @@ main.main-content > aside {
 }
 
 main.main-content > aside > article {
-	@apply border rounded-xl p-6 shadow-sm my-4 bg-white;
+	@apply p-6 my-4 bg-white border shadow-sm rounded-xl;
 }
 
 /* End Main Section styling */
 
 /* Start Contact Me component styling */
 section.content-contact {
-	@apply border rounded-xl p-3 shadow-sm sm:p-6;
+	@apply p-3 border shadow-sm rounded-xl sm:p-6;
 }
 
 section.content-contact > form {
-	@apply flex flex-col gap-y-4 py-4 justify-center items-center;
+	@apply flex flex-col items-center justify-center py-4 gap-y-4;
 }
 
 section.content-contact > form > div.form-wrapper {
@@ -178,7 +180,7 @@ section.content-contact > form div.form-control {
 }
 
 section.content-contact > form > div label {
-	@apply font-bold text-sm text-slate-700 pl-1;
+	@apply pl-1 text-sm font-bold text-slate-700;
 }
 
 section.content-contact > form > div input,
@@ -187,7 +189,7 @@ section.content-contact > form > div textarea {
 }
 
 section.content-contact > form button {
-	@apply p-2 border-none rounded w-full max-w-xs text-white shadow bg-teal-700 hover:bg-teal-800 font-medium active:scale-95 active:duration-300;
+	@apply w-full max-w-xs p-2 font-medium text-white bg-teal-700 border-none rounded shadow hover:bg-teal-800 active:scale-95 active:duration-300;
 }
 /* End Contact Me component styling */
 
@@ -198,12 +200,12 @@ footer.main-footer {
 
 /* Modal styling start */
 .modal {
-	@apply fixed top-0 left-0 w-full h-full bg-black opacity-70 z-50 text-white;
-	@apply hidden flex-col items-center justify-center;
+	@apply fixed top-0 left-0 z-50 w-full h-full text-white bg-black opacity-70;
+	@apply flex-col items-center justify-center hidden;
 }
 
 button {
-	@apply border-none rounded bg-blue-600 text-white;
+	@apply text-white bg-blue-600 border-none rounded;
 	@apply px-4 py-2;
 }
 

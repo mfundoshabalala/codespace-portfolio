@@ -585,6 +585,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   padding: 0px;
@@ -602,9 +603,28 @@ footer {
 }
 
 h1 {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #475569;
+  --tw-gradient-to: rgb(71 85 105 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(13 148 136 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #0d9488, var(--tw-gradient-to);
+  --tw-gradient-to: #475569;
+  -webkit-background-clip: text;
+          background-clip: text;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 900;
+  color: transparent;
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 h2 {
@@ -640,6 +660,8 @@ header {
   margin-right: 0.75rem;
   border-radius: 0.75rem;
   border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   padding: 1.5rem;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -660,6 +682,8 @@ header > div {
   align-items: center;
   justify-content: center;
   row-gap: 1rem;
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 header > div img {
@@ -667,7 +691,9 @@ header > div img {
   height: 8rem;
   width: 8rem;
   border-radius: 9999px;
-  border-width: 1px;
+  border-width: 2px;
+  border-color: rgb(17 94 89 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.6;
 }
 
 header > div p {
@@ -676,6 +702,8 @@ header > div p {
   font-weight: 300;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
+  --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 header > div ul {
@@ -745,6 +773,11 @@ header > div ul > li > a:hover i.fab.fa-github {
 header > div ul > li > a:hover i.fab.fa-linkedin {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+header > div ul > li > a:hover i.fab.fa-twitter {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 header > div ul li a span {

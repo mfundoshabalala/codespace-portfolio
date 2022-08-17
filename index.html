@@ -15,12 +15,20 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet">
 		<!-- Custom Styles -->
 		<link rel="stylesheet" href="./dist/styles.css" />
 		<title>Hello World, I'm Mfundo</title>
 	</head>
 
 	<body class="bg-splash">
+		<a class="fixed bottom-10 left-2">
+			<i class="fa fa-cloud-arrow-down cursor-pointer animate-ping"></i>
+		</a>
 		<!-- Modal -->
 		<div id="modal" role="dialog" class="modal">
 			<h2>Still in development</h2>
@@ -28,520 +36,538 @@
 		</div>
 		<!-- Header Component -->
 		<span id="profile"></span>
-		<header>
-			<div>
-				<img src="./public/images/avatar.jpg" alt="avatar" />
-				<h1>
-					Mfundo Shabalala</h1>
-				<p>I love creating semantical and asthestically pleasing
-					websites.
-				</p>
+		<div class="layout">
+			<header>
+				<div></div>
+				<div>
+					<img src="./public/images/avatar.jpg" alt="avatar" />
+					<h1>
+						Mfundo Shabalala</h1>
+					<p>I love creating semantical and asthestically pleasing
+						websites.
+					</p>
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/mfundoshabalala"
+								target="_blank" class="group">
+								<i aria-hidden="true"
+									class="fab fa-linkedin fa-2x"></i>
+								<span>Connect on LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/mfundoshabalala"
+								target="_blank" class="group">
+								<i aria-hidden="true"
+									class="fab fa-github fa-2x"></i>
+								<span>Connect on GitHub</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/mfundoshabalal"
+								target="_blank" class="group">
+								<i aria-hidden="true"
+									class="fab fa-twitter fa-2x"></i>
+								<span>Connect on Twitter</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<!-- Side Navigation Component -->
+			<nav>
 				<ul>
-					<li>
-						<a href="https://www.linkedin.com/in/mfundoshabalala"
-							target="_blank" class="group">
-							<i aria-hidden="true"
-								class="fab fa-linkedin fa-2x"></i>
-							<span>Connect on LinkedIn</span>
-						</a>
+					<li><a href="#profile">Profile</a>
 					</li>
-					<li>
-						<a href="https://github.com/mfundoshabalala"
-							target="_blank" class="group">
-							<i aria-hidden="true"
-								class="fab fa-github fa-2x"></i>
-							<span>Connect on GitHub</span>
-						</a>
+					<li><a href="#education">Education</a>
 					</li>
-					<li>
-						<a href="https://twitter.com/mfundoshabalal"
-							target="_blank" class="group">
-							<i aria-hidden="true"
-								class="fab fa-twitter fa-2x"></i>
-							<span>Connect on Twitter</span>
-						</a>
+					<li><a href="#experience">Experience</a>
 					</li>
+					<li><a href="#projects">Projects</a>
+					</li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
-			</div>
-		</header>
+			</nav>
 
-		<!-- Side Navigation Component -->
-		<nav>
-			<ul>
-				<li><a href="#profile">Profile</a>
-				</li>
-				<li><a href="#education">Education</a>
-				</li>
-				<li><a href="#experience">Experience</a>
-				</li>
-				<li><a href="#projects">Projects</a>
-				</li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Main Content Component -->
-		<main class="main-content">
-			<section class="content">
-				<!-- Education History Component -->
-				<section class="content-education" id="education">
-					<h2>Education</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Deserunt optio aut rem illum numquam iusto velit,
-						explicabo recusandae in praesentium nulla, nostrum
-						rerum. Reprehenderit laboriosam excepturi at voluptates
-						cum magni!</p>
-					<section>
-						<article>
-							<h3>
-								Intro to Web at
-								<a title="Code Space Academy - Introduction to Web Certification"
-									href="https://www.codespace.co.za/courses/intro-to-web"
-									target="_blank">CodeSpace
-									Academy</a>
-							</h3>
-							<p>
-								This short course gives an introductory
-								look
-								at the basics of
-								web development. It is ideal for anyone
-								interested in seeing if
-								web development is for them and wants to
-								understand their
-								options in the field without breaking
-								the
-								bank. Intro to Web is
-								the starting point to many of our longer
-								specialised courses.
-								The course is centred around a practical
-								project of building a
-								digital resumé using HTML and CSS.
-							</p>
-							<ul class="content-education__skills">
-								<li>
-									<i aria-hidden="true"
-										class="fab fa-html5"></i>
-									<span>HTML</span>
-								</li>
-								<li>
-									<i aria-hidden="true"
-										class="fab fa-css3"></i>
-									<span>CSS</span>
-								</li>
-								<li>
-									<i aria-hidden="true"
-										class="fab fa-js-square"></i>
-									<span>JavaScript</span>
-								</li>
-							</ul>
-						</article>
-						<article>
-							<h3>Qualification 2</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Quia
-								doloremque veniam minima officia magni
-								nesciunt ad ratione
-								pariatur sequi, placeat vero officiis.
-								Beatae, iusto fuga? Quas
-								fugiat nemo qui? Iusto!
-							</p>
-							<ul class="content-education__skills">
-								<li>Skill 1</li>
-								<li>Skill 2</li>
-								<li>Skill 3</li>
-							</ul>
-						</article>
+			<!-- Main Content Component -->
+			<main class="main-content">
+				<section class="content">
+					<!-- Education History Component -->
+					<section class="content-education" id="education">
+						<h2>Education</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.
+							Deserunt optio aut rem illum numquam iusto velit,
+							explicabo recusandae in praesentium nulla, nostrum
+							rerum. Reprehenderit laboriosam excepturi at
+							voluptates
+							cum magni!</p>
+						<section>
+							<article>
+								<h3>
+									Intro to Web at
+									<a title="Code Space Academy - Introduction to Web Certification"
+										href="https://www.codespace.co.za/courses/intro-to-web"
+										target="_blank">CodeSpace
+										Academy</a>
+								</h3>
+								<p>
+									This short course gives an introductory
+									look
+									at the basics of
+									web development. It is ideal for anyone
+									interested in seeing if
+									web development is for them and wants to
+									understand their
+									options in the field without breaking
+									the
+									bank. Intro to Web is
+									the starting point to many of our longer
+									specialised courses.
+									The course is centred around a practical
+									project of building a
+									digital resumé using HTML and CSS.
+								</p>
+								<ul class="content-education__skills">
+									<li>
+										<i aria-hidden="true"
+											class="fab fa-html5"></i>
+										<span>HTML</span>
+									</li>
+									<li>
+										<i aria-hidden="true"
+											class="fab fa-css3"></i>
+										<span>CSS</span>
+									</li>
+									<li>
+										<i aria-hidden="true"
+											class="fab fa-js-square"></i>
+										<span>JavaScript</span>
+									</li>
+								</ul>
+							</article>
+							<article>
+								<h3>Qualification 2</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Quia
+									doloremque veniam minima officia magni
+									nesciunt ad ratione
+									pariatur sequi, placeat vero officiis.
+									Beatae, iusto fuga? Quas
+									fugiat nemo qui? Iusto!
+								</p>
+								<ul class="content-education__skills">
+									<li>Skill 1</li>
+									<li>Skill 2</li>
+									<li>Skill 3</li>
+								</ul>
+							</article>
+						</section>
 					</section>
-				</section>
 
-				<!-- Work Experience Component -->
-				<section class="content-experience" id="experience">
-					<h2>Experience</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Deserunt optio aut rem illum numquam iusto velit,
-						explicabo recusandae in praesentium nulla, nostrum
-						rerum. Reprehenderit laboriosam excepturi at voluptates
-						cum magni!</p>
-					<section>
-						<article>
-							<h3>Job 1</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Quia
-								doloremque veniam minima officia magni
-								nesciunt ad ratione
-								pariatur sequi, placeat vero officiis.
-								Beatae, iusto fuga? Quas
-								fugiat nemo qui? Iusto!
-							</p>
-							<ul class="content-experience__responsibilities">
-								<li>
-									A sentence about the
-									responsibilities of
-									the job
-								</li>
-								<li>
-									A sentence about the
-									responsibilities of
-									the job
-								</li>
-								<li>
-									A sentence about the
-									responsibilities of
-									the job
-								</li>
-								<li>
-									A sentence about the
-									responsibilities of
-									the job
-								</li>
-							</ul>
-						</article>
-						<article>
-							<h3>Job 2</h3>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Quia
-								doloremque veniam minima officia magni
-								nesciunt ad ratione
-								pariatur sequi, placeat vero officiis.
-								Beatae, iusto fuga? Quas
-								fugiat nemo qui? Iusto!
-							</p>
-							<ul class="content-experience__responsibilities">
-								<li>
-									A sentence about the
-									responsibilities of
-									the job
-								</li>
-								<li>
-									A sentence about the
-									responsibilities of
-									the job
-								</li>
-								<li>
-									A sentence about the
-									responsibilities of
-									the job
-								</li>
-								<li>
-									A sentence about the
-									responsibilities of
-									the job
-								</li>
-							</ul>
-						</article>
+					<!-- Work Experience Component -->
+					<section class="content-experience" id="experience">
+						<h2>Experience</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.
+							Deserunt optio aut rem illum numquam iusto velit,
+							explicabo recusandae in praesentium nulla, nostrum
+							rerum. Reprehenderit laboriosam excepturi at
+							voluptates
+							cum magni!</p>
+						<section>
+							<article>
+								<h3>Job 1</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Quia
+									doloremque veniam minima officia magni
+									nesciunt ad ratione
+									pariatur sequi, placeat vero officiis.
+									Beatae, iusto fuga? Quas
+									fugiat nemo qui? Iusto!
+								</p>
+								<ul
+									class="content-experience__responsibilities">
+									<li>
+										A sentence about the
+										responsibilities of
+										the job
+									</li>
+									<li>
+										A sentence about the
+										responsibilities of
+										the job
+									</li>
+									<li>
+										A sentence about the
+										responsibilities of
+										the job
+									</li>
+									<li>
+										A sentence about the
+										responsibilities of
+										the job
+									</li>
+								</ul>
+							</article>
+							<article>
+								<h3>Job 2</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Quia
+									doloremque veniam minima officia magni
+									nesciunt ad ratione
+									pariatur sequi, placeat vero officiis.
+									Beatae, iusto fuga? Quas
+									fugiat nemo qui? Iusto!
+								</p>
+								<ul
+									class="content-experience__responsibilities">
+									<li>
+										A sentence about the
+										responsibilities of
+										the job
+									</li>
+									<li>
+										A sentence about the
+										responsibilities of
+										the job
+									</li>
+									<li>
+										A sentence about the
+										responsibilities of
+										the job
+									</li>
+									<li>
+										A sentence about the
+										responsibilities of
+										the job
+									</li>
+								</ul>
+							</article>
+						</section>
 					</section>
-				</section>
 
-				<!-- Projects -->
-				<section class="content-projects" id="projects">
-					<h2>Projects</h2>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Expedita quae sed fugit! Nesciunt, dignissimos amet,
-						nihil numquam repudiandae ut aliquam ullam dicta placeat
-						eligendi quod ipsa aut, distinctio sit necessitatibus!
-					</p>
-					<section>
-						<article class="card">
-							<h3 class="card-header"><a>Project 1
-								</a></h3>
-							<main class="card-body">
-								<picture>
-									<img src='https://dummyimage.com/600x400.png?text=In%20development'
-										alt='in production' />
-								</picture>
-							</main>
-							<footer class="card-footer">
-								<p>Short project description</p>
-							</footer>
-						</article>
-						<article class="card">
-							<h3 class="card-header"><a>Project 2
-								</a></h3>
-							<main class="card-body">
-								<picture>
-									<img src='https://dummyimage.com/600x400.png?text=In%20development'
-										alt='in production' />
-								</picture>
-							</main>
-							<footer class="card-footer">
-								<p>Short project description</p>
-							</footer>
-						</article>
-						<article class="card">
-							<h3 class="card-header"><a>Project 3
-								</a></h3>
-							<main class="card-body">
-								<picture>
-									<img src='https://dummyimage.com/600x400.png?text=In%20development'
-										alt='in production' />
-								</picture>
-							</main>
-							<footer class="card-footer">
-								<p>Short project description</p>
-							</footer>
-						</article>
-						<article class="card">
-							<h3 class="card-header"><a>Project 4
-								</a></h3>
-							<main class="card-body">
-								<picture>
-									<img src='https://dummyimage.com/600x400.png?text=In%20development'
-										alt='in production' />
-								</picture>
-							</main>
-							<footer class="card-footer">
-								<p>Short project description</p>
-							</footer>
-						</article>
+					<!-- Projects -->
+					<section class="content-projects" id="projects">
+						<h2>Projects</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing
+							elit.
+							Expedita quae sed fugit! Nesciunt, dignissimos amet,
+							nihil numquam repudiandae ut aliquam ullam dicta
+							placeat
+							eligendi quod ipsa aut, distinctio sit
+							necessitatibus!
+						</p>
+						<section>
+							<article class="card">
+								<h3 class="card-header"><a>Project 1
+									</a></h3>
+								<main class="card-body">
+									<picture>
+										<img src='https://dummyimage.com/600x400.png?text=In%20development'
+											alt='in production' />
+									</picture>
+								</main>
+								<footer class="card-footer">
+									<p>Short project description</p>
+								</footer>
+							</article>
+							<article class="card">
+								<h3 class="card-header"><a>Project 2
+									</a></h3>
+								<main class="card-body">
+									<picture>
+										<img src='https://dummyimage.com/600x400.png?text=In%20development'
+											alt='in production' />
+									</picture>
+								</main>
+								<footer class="card-footer">
+									<p>Short project description</p>
+								</footer>
+							</article>
+							<article class="card">
+								<h3 class="card-header"><a>Project 3
+									</a></h3>
+								<main class="card-body">
+									<picture>
+										<img src='https://dummyimage.com/600x400.png?text=In%20development'
+											alt='in production' />
+									</picture>
+								</main>
+								<footer class="card-footer">
+									<p>Short project description</p>
+								</footer>
+							</article>
+							<article class="card">
+								<h3 class="card-header"><a>Project 4
+									</a></h3>
+								<main class="card-body">
+									<picture>
+										<img src='https://dummyimage.com/600x400.png?text=In%20development'
+											alt='in production' />
+									</picture>
+								</main>
+								<footer class="card-footer">
+									<p>Short project description</p>
+								</footer>
+							</article>
+						</section>
 					</section>
-				</section>
 
-				<!-- Skills List -->
-				<section class="content-skills" id="skills">
-					<h2>Skills</h2>
+					<!-- Skills List -->
+					<section class="content-skills" id="skills">
+						<h2>Skills</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.
+							Deserunt optio aut rem illum numquam iusto velit,
+							explicabo recusandae in praesentium nulla, nostrum
+							rerum. Reprehenderit laboriosam excepturi at
+							voluptates
+							cum magni!</p>
+						<div>
+							<ul class="pl-8 list-disc list-inside">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>Skill-4</li>
+								<li>Skill-5</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Contact Me
+					<section class="content-contact" id="contact">
+						<h2>Contact Me</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.
+							Deserunt optio aut rem illum numquam iusto velit,
+							explicabo recusandae in praesentium nulla, nostrum
+							rerum. Reprehenderit laboriosam excepturi at
+							voluptates
+							cum magni!</p>
+						<form>
+							<div class="form-wrapper">
+								<div class="form-control">
+									<label for="firstName">First Name</label>
+									<input type="text" id="firstName" required
+										placeholder="Mfundo">
+								</div>
+								<div class="form-control">
+									<label for="lastName">Last Name</label>
+									<input type="text" id="lastName" required
+										placeholder="Shabalala">
+								</div>
+							</div>
+							<div class="form-wrapper">
+								<div class="form-control">
+									<label for="email">Email</label>
+									<input type="email" id="email" required
+										placeholder="mfundoshabalala@gmail.com">
+								</div>
+								<div class="form-control">
+									<label for="website">Website</label>
+									<input type="text" id="website"
+										placeholder="https://www.google.com">
+								</div>
+							</div>
+							<div class="form-wrapper">
+								<div class="form-control">
+									<label for="message">Message</label>
+									<textarea id="message" required
+										placeholder="Hello, I am a web developer"></textarea>
+								</div>
+							</div>
+							<button type="submit">
+								<i class="fas fa-paper-plane"></i>
+								Send
+							</button>
+						</form>
+					</section> -->
+
+				</section>
+				<aside>
+					<h2>Blog posts</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Deserunt optio aut rem illum numquam iusto velit,
 						explicabo recusandae in praesentium nulla, nostrum
 						rerum. Reprehenderit laboriosam excepturi at voluptates
 						cum magni!</p>
-					<div>
-						<ul class="pl-8 list-disc list-inside">
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JavaScript</li>
-							<li>Skill-4</li>
-							<li>Skill-5</li>
-						</ul>
-					</div>
-				</section>
+					<!-- Blog Post -->
+					<article class=" blog-post">
+						<h3><a href="">Blog Post 1</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 2</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 3</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 5</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 6</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 7</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 8</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 7</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 10</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+					<!-- Blog Post -->
+					<article class="blog-post">
+						<h3><a href="">Blog Post 11</a></h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing
+							elit.
+							Quia doloremque veniam minima officia magni
+							nesciunt
+							ad
+							ratione pariatur sequi, placeat vero
+							officiis.
+							Beatae,
+							iusto fuga? Quas fugiat nemo qui? Iusto!
+						</p>
+					</article>
+				</aside>
+			</main>
 
-				<!-- Contact Me -->
-				<section class="content-contact" id="contact">
-					<h2>Contact Me</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Deserunt optio aut rem illum numquam iusto velit,
-						explicabo recusandae in praesentium nulla, nostrum
-						rerum. Reprehenderit laboriosam excepturi at voluptates
-						cum magni!</p>
-					<form>
-						<div class="form-wrapper">
-							<div class="form-control">
-								<label for="firstName">First Name</label>
-								<input type="text" id="firstName" required
-									placeholder="Mfundo">
-							</div>
-							<div class="form-control">
-								<label for="lastName">Last Name</label>
-								<input type="text" id="lastName" required
-									placeholder="Shabalala">
-							</div>
-						</div>
-						<div class="form-wrapper">
-							<div class="form-control">
-								<label for="email">Email</label>
-								<input type="email" id="email" required
-									placeholder="mfundoshabalala@gmail.com">
-							</div>
-							<div class="form-control">
-								<label for="website">Website</label>
-								<input type="text" id="website"
-									placeholder="https://www.google.com">
-							</div>
-						</div>
-						<div class="form-wrapper">
-							<div class="form-control">
-								<label for="message">Message</label>
-								<textarea id="message" required
-									placeholder="Hello, I am a web developer"></textarea>
-							</div>
-						</div>
-						<button type="submit">
-							<i class="fas fa-paper-plane"></i>
-							Send
-						</button>
-					</form>
-				</section>
-			</section>
-			<aside>
-				<h2>Blog posts</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Deserunt optio aut rem illum numquam iusto velit,
-					explicabo recusandae in praesentium nulla, nostrum
-					rerum. Reprehenderit laboriosam excepturi at voluptates
-					cum magni!</p>
-				<!-- Blog Post -->
-				<article class=" blog-post">
-					<h3><a href="">Blog Post 1</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 2</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 3</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 5</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 6</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 7</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 8</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 7</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 10</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-				<!-- Blog Post -->
-				<article class="blog-post">
-					<h3><a href="">Blog Post 11</a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur
-						adipisicing
-						elit.
-						Quia doloremque veniam minima officia magni
-						nesciunt
-						ad
-						ratione pariatur sequi, placeat vero
-						officiis.
-						Beatae,
-						iusto fuga? Quas fugiat nemo qui? Iusto!
-					</p>
-				</article>
-			</aside>
-		</main>
-
-		<footer class="main-footer">
-			<p style="font-size: 0.9rem;">
-				&copy; 2022 - Designed and Coded by <a style="font-style:italic"
-					href="https://www.linkedin.com/in/mfundoshabalala">Mfundo
-					Shabalala</a>
-			</p>
-		</footer>
+			<footer class="main-footer">
+				<p style="font-size: 0.9rem;">
+					&copy; 2022 - Designed and Coded by <a
+						style="font-style:italic"
+						href="https://www.linkedin.com/in/mfundoshabalala">Mfundo
+						Shabalala</a>
+				</p>
+			</footer>
+		</div>
 	</body>
 
 	<script>

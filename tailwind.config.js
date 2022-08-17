@@ -3,11 +3,24 @@ module.exports = {
 	content: ["./index.html"],
 	theme: {
 		extend: {
+			container: {
+				padding: {
+					DEFAULT: '1rem',
+					sm: '2rem',
+					lg: '4rem',
+					xl: '5rem',
+					'2xl': '6rem',
+				},
+			},
 			backgroundImage: {
-				splash: "url('/public/images/background-image.png')",
+				"splash": "url('/public/images/background-image.png')",
+				"header-pattern": "url('/public/images/header-pattern.png')",
 			},
 			animation: {
 				"bounce-spin": "bounce-spin 1500ms infinite ease-in-out",
+			},
+			fontFamily: {
+				fira: ["Fira Sans", "sans-serif"],
 			},
 			keyframes: {
 				"bounce-spin": {

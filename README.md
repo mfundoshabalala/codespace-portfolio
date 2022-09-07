@@ -38,3 +38,6 @@ If you have any feedback, please reach out to us at mfundoshabalala@gmail.com
 This project is used by the following companies:
 
 -   CodeSpace
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bfdfc2fe-2240-4d80-b254-34fe016a8fd2/deploy-status)](https://app.netlify.com/sites/mfundoshabalala/deploys)
